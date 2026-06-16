@@ -1,17 +1,43 @@
-# SauceDemo Selenium Automation Framework
+# 🚀 Selenium Java Automation Framework
 
-## Tech Stack
-- Java 11
-- Selenium 4
-- TestNG 7
-- ExtentReports 5
-- Log4j2
-- Apache POI (Excel)
-- WebDriverManager
+![Java](https://img.shields.io/badge/Java-11%2B-orange)
+![Selenium](https://img.shields.io/badge/Selenium-4.x-green)
+![TestNG](https://img.shields.io/badge/TestNG-7.x-red)
+![Maven](https://img.shields.io/badge/Maven-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+A robust, scalable **Selenium WebDriver** automation framework built with **Java**, **TestNG**, and **Page Object Model (POM)** design pattern. Includes data-driven testing, extent reports, logging, and screenshot capture on failure.
 
 ---
 
-## Project Structure
+## 📌 Features
+
+- ✅ Page Object Model (POM) Design Pattern
+- ✅ Data-Driven Testing using Apache POI (Excel)
+- ✅ Extent Reports for detailed HTML reporting
+- ✅ Log4j2 for logging
+- ✅ Screenshot capture on test failure
+- ✅ TestNG for test management and parallel execution
+- ✅ Configurable via `GlobalData.properties`
+- ✅ Explicit Wait helpers for stable test execution
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Version |
+|---|---|
+| Java | 11+ |
+| Selenium WebDriver | 4.x |
+| TestNG | 7.x |
+| Maven | 3.x |
+| Apache POI | 5.x |
+| ExtentReports | 5.x |
+| Log4j2 | 2.x |
+
+---
+
+## 📁 Project Structure
 
 ```
 seleniumpractise/
@@ -22,9 +48,9 @@ seleniumpractise/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── Base/
-│   │   │   │   └── Base.java             # WebDriver setup/teardown, @BeforeSuite/@AfterSuite
+│   │   │   │   └── Base.java             # WebDriver setup/teardown
 │   │   │   ├── listeners/
-│   │   │   │   └── TestListener.java     # TestNG listener — reports + screenshots on failure
+│   │   │   │   └── TestListener.java     # TestNG listener — reports + screenshots
 │   │   │   ├── pageobject/
 │   │   │   │   ├── LoginPage.java        # SauceDemo Login page POM
 │   │   │   │   ├── ProductsPage.java     # Products/Inventory page POM
@@ -37,48 +63,94 @@ seleniumpractise/
 │   │   │       ├── ScreenshotUtils.java  # Screenshot capture helper
 │   │   │       └── WaitUtils.java        # Explicit wait helpers
 │   │   └── resources/
-│   │       └── GlobalData.properties    # URL, credentials, browser, timeouts
+│   │       └── GlobalData.properties    # URL, browser, timeouts config
 │   └── test/
 │       ├── java/
 │       │   └── testcomponents/
-│       │       └── LoginTest.java        # 4 test cases for the SauceDemo flow
+│       │       └── LoginTest.java        # Test cases for SauceDemo flow
 │       └── resources/
 │           ├── testng.xml               # TestNG suite config
 │           ├── log4j2.xml               # Log4j2 config
-│           └── testdata/                # Excel test data files (if needed)
+│           └── testdata/                # Excel test data files
 └── pom.xml                              # Maven dependencies
 ```
 
 ---
 
-## Test Cases
+## ⚙️ Setup & Installation
 
-| TC # | Test Method | Description |
-|------|-------------|-------------|
-| TC_001 | testValidLogin | Login with valid credentials, assert URL changes |
-| TC_002 | testProductsPageLoad | Assert Products page title and product listing |
-| TC_003 | testAddProductToCart | Add product, assert cart badge shows "1" |
-| TC_004 | testNavigateToCart | Go to Cart, assert page title, item count, item name |
+### Prerequisites
+- Java 11 or higher installed
+- Maven installed
+- Chrome browser installed
+- IntelliJ IDEA (recommended)
 
----
+### Steps
 
-## How to Run
-
-### From IntelliJ
-Right-click `testng.xml` → **Run**
-
-### From Maven (terminal)
+**1. Clone the repository**
 ```bash
-mvn clean test
+git clone https://github.com/akshaycode-hub/selenium_Java_framework.git
 ```
 
-### View Report
-Open `reports/ExtentReport.html` in a browser after execution.
+**2. Open in IntelliJ IDEA**
+```
+File → Open → Select project folder
+```
+
+**3. Configure `GlobalData.properties`**
+```properties
+url=https://www.saucedemo.com
+browser=chrome
+username=standard_user
+password=secret_sauce
+```
+
+**4. Run Tests**
+```bash
+mvn test
+```
+Or right-click `testng.xml` → Run
 
 ---
 
-## Configuration
-Edit `src/main/resources/GlobalData.properties` to change:
-- `browser` → chrome / firefox
-- `baseUrl` → application URL
-- `username` / `password` → test credentials
+## 📊 Reports
+
+After test execution, reports are generated in the `reports/` folder:
+```
+reports/
+└── ExtentReport.html    ← Open in browser to see results
+```
+
+---
+
+## 📸 Screenshots
+
+Screenshots are automatically captured on test failure:
+```
+screenshots/
+└── TestName_timestamp.png
+```
+
+---
+
+## 🧪 Test Cases
+
+| Test Case | Description |
+|---|---|
+| Valid Login | Login with correct credentials |
+| Invalid Login | Login with wrong credentials |
+| Add to Cart | Add product to cart |
+| Logout | Logout from application |
+
+---
+
+## 👤 Author
+
+**Akshay** — [@akshaycode-hub](https://github.com/akshaycode-hub)
+
+---
+
+## 📝 License
+
+This project is for learning and practice purposes.
+```
