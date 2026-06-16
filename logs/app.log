@@ -1,0 +1,15 @@
+2026-06-16 09:55:04 [INFO ] [main] Utility.LogUtils - Screenshots folder cleared.
+2026-06-16 09:55:05 [INFO ] [main] Utility.LogUtils - Extent Reports initialized at: C:\Users\akshay\Downloads\seleniumpractise_framework/reports/ExtentReport.html
+2026-06-16 09:55:05 [INFO ] [main] Utility.LogUtils - === Test Suite Started ===
+2026-06-16 09:55:05 [INFO ] [main] Utility.LogUtils - ====== Test Suite: SauceDemo Login and Cart Tests Started ======
+2026-06-16 09:55:05 [INFO ] [main] Utility.LogUtils - Reading test data from Excel: C:\Users\akshay\Downloads\seleniumpractise_framework/src/test/resources/testdata/testdata.xlsx
+2026-06-16 09:55:11 [INFO ] [main] Utility.LogUtils - Browser launched: chrome
+2026-06-16 09:55:13 [INFO ] [main] Utility.LogUtils - Navigated to: https://www.saucedemo.com
+2026-06-16 09:55:14 [INFO ] [main] Utility.LogUtils - >>> TEST STARTED: testLoginWithExcelData
+2026-06-16 09:55:14 [INFO ] [main] Utility.LogUtils - Running login test → User: standard_user | Expected: Pass
+2026-06-16 09:55:14 [INFO ] [main] Utility.LogUtils - Entered username: standard_user
+2026-06-16 09:55:14 [INFO ] [main] Utility.LogUtils - Entered password.
+2026-06-16 09:55:15 [INFO ] [main] Utility.LogUtils - Clicked Login button.
+2026-06-16 09:55:15 [INFO ] [main] Utility.LogUtils - Login PASSED for user: standard_user
+2026-06-16 09:55:15 [INFO ] [main] Utility.LogUtils - <<< TEST PASSED: testLoginWithExcelData
+2026-06-16 09:55:15 [INFO ] [main] Utility.LogUtils - Browser closed.
