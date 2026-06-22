@@ -146,7 +146,7 @@ screenshots/
 
 ## 👤 Author
 
-**Akshay** — [@akshaycode-hub](https://github.com/akshaycode-hub)
+**Akshay** — https://github.com/Akshay-Chandanshiv
 
 ---
 
